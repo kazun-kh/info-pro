@@ -111,3 +111,29 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.rounded-1{
+  background-image: url(protein1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.rounded-2{
+  background-image: url(Insulin.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.rounded-3{
+  background-image: url(helth.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+.main1{
+  background: #A2A2A2;
+  background-image: -webkit-radial-gradient(at 50% 90%, #B8B4B3 0%, #3B3A38 100%);
+  background-image: radial-gradient(at 50% 90%, #B8B4B3 0%, #3B3A38 100%);
+  background-blend-mode: normal,multiply;
+}
