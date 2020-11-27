@@ -1,3 +1,4 @@
+<%= render "shared/header" %>
 
 <div class="main1" role="main">
 
@@ -15,7 +16,8 @@
             <h1>There are no shortcuts.</h1>
             <p>The fact that a shortcut is important to you means that you are a pussy.</p>
             <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">今すぐサインアップ</a></p>
+            <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">今すぐサインアップ</a></p> -->
+            <p><%= link_to '今すぐサインアップ', new_user_registration_path, class: "btn btn-lg btn-primary" %></p>
           </div>
         </div>
       </div>
@@ -156,3 +158,5 @@
 
   </div><!-- /.container -->
 </div>
+
+<%= render "shared/footer" %>
