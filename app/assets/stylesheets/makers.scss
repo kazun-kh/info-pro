@@ -112,28 +112,64 @@ body {
   background-position: center;
 }
 
-.rounded-1{
+
+.main1{
+  background: #BDB5B2;
+  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.2) 0%, #A1A1A1 100%), -webkit-linear-gradient(top right, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 95%);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 0%, #A1A1A1 100%), linear-gradient(to bottom left, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 95%);
+  background-blend-mode: multiply;
+}
+
+.col-md-5{
   background-image: url(protein1.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.rounded-2{
+.col-md-5.order-md-1{
   background-image: url(Insulin.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-.rounded-3{
+.col-md-5.order-md-2{
   background-image: url(helth.jpg);
   background-size: cover;
   background-position: center;
 }
 
+.rounded-1{
+  background-image: url(zavas_logo.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-.main1{
-  background: #A2A2A2;
-  background-image: -webkit-radial-gradient(at 50% 90%, #B8B4B3 0%, #3B3A38 100%);
-  background-image: radial-gradient(at 50% 90%, #B8B4B3 0%, #3B3A38 100%);
-  background-blend-mode: normal,multiply;
+.rounded-2{
+  background-image: url(goldgym.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.rounded-3{
+  background-image: url(myprotein.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.rounded-4{
+  background-image: url(dns_icon.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.rounded-5{
+  background-image: url(weider.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.rounded-6{
+  background-image: url(belegend.png);
+  background-size: cover;
+  background-position: center;
 }
