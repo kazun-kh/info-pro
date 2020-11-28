@@ -17,7 +17,9 @@
             <p>The fact that a shortcut is important to you means that you are a pussy.</p>
             <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p> -->
             <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">今すぐサインアップ</a></p> -->
+            <% unless user_signed_in? %> 
             <p><%= link_to '今すぐサインアップ', new_user_registration_path, class: "btn btn-lg btn-primary" %></p>
+            <% end %>
           </div>
         </div>
       </div>
@@ -55,6 +57,14 @@
       <span class="sr-only">次へ</span>
     </a>
   </div>
+
+<div class="jumbotron">
+  <h1 class="display-4">1日に必要なタンパク質を計算しましょう。</h1>
+  <p class="lead"></p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
 
   <div class="row featurette">
       <div class="col-md-7">
