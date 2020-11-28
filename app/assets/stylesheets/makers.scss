@@ -114,10 +114,8 @@ body {
 
 
 .main1{
-  background: #BDB5B2;
-  background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.2) 0%, #A1A1A1 100%), -webkit-linear-gradient(top right, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 95%);
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.2) 0%, #A1A1A1 100%), linear-gradient(to bottom left, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 95%);
-  background-blend-mode: multiply;
+  background: linear-gradient(60deg, rgba(36, 65, 119, 0.6), rgba(32, 43, 54, 0.9)) ,url(back4.jpeg);
+  background-position: center;
 }
 
 .col-md-5{
@@ -172,4 +170,11 @@ body {
   background-image: url(belegend.png);
   background-size: cover;
   background-position: center;
+}
+
+.badge.badge-info{
+  font-size: 60px;
+  display: block;
+  margin: auto;
+  width: 30%;
 }
