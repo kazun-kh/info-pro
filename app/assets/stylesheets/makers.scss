@@ -137,41 +137,13 @@ body {
   background-position: center;
 }
 
-.rounded-1{
-  background-image: url(zavas_logo.jpg);
+.rounded{
+  width: 300px; 
+  height: 300px;
   background-size: cover;
   background-position: center;
 }
 
-.rounded-2{
-  background-image: url(goldgym.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.rounded-3{
-  background-image: url(myprotein.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.rounded-4{
-  background-image: url(dns_icon.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.rounded-5{
-  background-image: url(weider.png);
-  background-size: cover;
-  background-position: center;
-}
-
-.rounded-6{
-  background-image: url(belegend.png);
-  background-size: cover;
-  background-position: center;
-}
 
 .badge.badge-info{
   font-size: 60px;

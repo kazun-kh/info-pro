@@ -1,0 +1,2 @@
+module ZavassHelper
+end

@@ -79,11 +79,17 @@
     </div>
 
  <div class="container marketing">
- <div class="badge badge-info" a href="#" >Let's talk!</a></div>
+ <%= link_to "Let's talk!", work_outs_index_path, class:"badge badge-info" %>
   <br>
     <div class="row">
       <div class="col-lg-4">
-        <img class="rounded-1"  width="300" height="300">
+        <%= link_to image_tag("zavas_logo.jpg",class:"rounded"), zavass_index_path %>
+        <h2></h2><!--会社のキャッチコピーを入れたい-->
+        <p></p>
+        <p><a class="btn btn-secondary" href="#" role="button">公式HP &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+         <%= link_to image_tag("goldgym.png",class:"rounded"), zavass_index_path %>
         <!-- <h2>Heading</h2> -->
         <h2></h2>
         <p></p>
@@ -91,15 +97,14 @@
         <p><a class="btn btn-secondary" href="#" role="button">公式HP &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <img class="rounded-2" width="300" height="300">
+         <%= link_to image_tag("myprotein.png",class:"rounded"), zavass_index_path %>
         <!-- <h2>Heading</h2> -->
         <h2></h2>
         <p></p>
-        <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
         <p><a class="btn btn-secondary" href="#" role="button">公式HP &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <img class="rounded-3" width="300" height="300">
+       <div class="col-lg-4">
+         <%= link_to image_tag("dns_icon.png",class:"rounded"), zavass_index_path %>
         <!-- <h2>Heading</h2> -->
         <h2></h2>
         <p></p>
@@ -107,7 +112,7 @@
         <p><a class="btn btn-secondary" href="#" role="button">公式HP &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
        <div class="col-lg-4">
-        <img class="rounded-4" width="300" height="300">
+         <%= link_to image_tag("weider.png",class:"rounded"), zavass_index_path %>
         <!-- <h2>Heading</h2> -->
         <h2></h2>
         <p></p>
@@ -115,15 +120,7 @@
         <p><a class="btn btn-secondary" href="#" role="button">公式HP &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
        <div class="col-lg-4">
-        <img class="rounded-5" width="300" height="300">
-        <!-- <h2>Heading</h2> -->
-        <h2></h2>
-        <p></p>
-        <!-- <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p> -->
-        <p><a class="btn btn-secondary" href="#" role="button">公式HP &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-       <div class="col-lg-4">
-        <img class="rounded-6" width="300" height="300">
+         <%= link_to image_tag("belegend.png",class:"rounded"), zavass_index_path %>
         <!-- <h2>Heading</h2> -->
         <h2></h2>
         <p></p>
