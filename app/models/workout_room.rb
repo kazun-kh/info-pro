@@ -1,0 +1,2 @@
+class WorkoutRoom < ApplicationRecord
+end
