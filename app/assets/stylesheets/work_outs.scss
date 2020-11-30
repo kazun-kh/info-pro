@@ -50,28 +50,48 @@ color: rgb(216, 215, 248);
 
 }
 
+
 .form-input {
   width: 100%;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-message {
   border: none;
   height: 50px;
-  width: 700px;
+  width: 500px;
   padding-left: 10px;
+  border-radius:3px;
+}
 
+
+
+.hidden {
+  display: none;
 }
 
 .fas.fa-running{
-  background: linear-gradient(-45deg, rgba(231, 250, 121, 0.733), rgba(170, 197, 202, 0.8));
+  background: linear-gradient(-45deg, rgba(245, 103, 238, 0.733), rgba(170, 197, 202, 0.8));
   border: none;
   color: rgb(10, 0, 0);
   font-size: 30px;
   border-radius:30px;
   padding: 20px;
+  margin-left: 10px;
 }
 
+.fas.fa-camera-retro{
+  font-size: 30px;  
+  background: linear-gradient(-45deg, rgba(147, 88, 241, 0.733), rgba(52, 73, 77, 0.8));
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px;
+  width: 60px;
+  margin: 10px;
+  border-radius: 10px;
+}
 
 .rooms {
  
