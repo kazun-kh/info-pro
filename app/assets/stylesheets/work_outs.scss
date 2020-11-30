@@ -1,3 +1,93 @@
 // Place all the styles related to the Work_outs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.jumbo-workout-head{
+  background-image: url(menwomen1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 25rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+}
+.jumbo-content{
+color: rgb(216, 215, 248);
+}
+
+.wrapper {
+  display: flex;
+  justify-content:center;
+  background-image: url(back7.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.side-bar-header {
+  height: 100px;
+  padding: 0 20px;
+  background: linear-gradient(-45deg, rgba(198, 206, 129, 0.733), rgba(170, 197, 202, 0.8));
+
+}
+
+.side-bar {
+  background: linear-gradient(-45deg, rgba(51, 43, 168, 0.733), rgba(170, 197, 202, 0.8));
+  width : 300px;
+  height: 100vh;
+}
+
+.chat {
+  background: linear-gradient(-45deg, rgba(160, 199, 135, 0.733), rgba(159, 91, 180, 0.8));
+  width : calc(100% - 300px) ;
+}
+
+.chat-header{
+  height: 100px;
+  background: linear-gradient(-45deg, rgba(63, 233, 139, 0.733), rgba(170, 197, 202, 0.8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.form-input {
+  width: 100%;
+  
+}
+
+.form-message {
+  border: none;
+  height: 50px;
+  width: 700px;
+  padding-left: 10px;
+
+}
+
+.fas.fa-running{
+  background: linear-gradient(-45deg, rgba(231, 250, 121, 0.733), rgba(170, 197, 202, 0.8));
+  border: none;
+  color: rgb(10, 0, 0);
+  font-size: 30px;
+  border-radius:30px;
+  padding: 20px;
+}
+
+
+.rooms {
+ 
+  padding: 0 20px;
+  overflow: scroll;
+
+  
+  
+}
+
+.room {
+  padding: 20px 0 40px;
+}
+
+.room-name a {
+  text-decoration: none;
+  color: white;
+}
+

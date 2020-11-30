@@ -1,7 +1,53 @@
-<div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+<%= render "shared/header" %>
+
+<div class="jumbo-workout-head">
+ <div class="jumbo-content">
+  <h1 class="display-4">Let's get started!</h1>
+  <p class="lead">筋トレに関することなら何でも話しましょう！</p>
+
+  <p></p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Make a room</a>
+  </div>
 </div>
+
+<div class="wrapper">
+
+    <div class="side-bar">
+       <div class="side-bar-header">
+      <div class="side-header-name">
+      </div>
+       </div>
+      <div class="rooms">
+        <div class="room">
+          <div class="room-name">
+            <a href="#">roooooooooooooooooooooom</a>
+          </div>
+       </div>
+
+      <div class="room">
+        <div class="room-name">
+          <a href="#">room2</a>
+         </div>
+        </div>
+      </div>
+    </div>
+  
+  <div class="chat">   
+   <div class="chat-header">
+    
+    <div class="form">
+     <div class="form-input">
+      <input class="form-message" placeholder= "type a message">
+      <i input class="fas fa-running" type="submit" value="送信"></i>
+    
+    </div>
+     </div>
+     
+
+  </div>
+  </div>
+  
+</div>
+
+
+<%= render "shared/footer" %>
