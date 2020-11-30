@@ -1,0 +1,2 @@
+module WorkoutRoomsHelper
+end

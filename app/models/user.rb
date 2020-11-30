@@ -5,4 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
          validates :nickname,  presence: true
+
+         has_many :workout_room_users
+         has_many :workout_rooms, through: :workout_room_users
 end
