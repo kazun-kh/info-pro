@@ -8,22 +8,12 @@
       <% @workoutroom.each do |room| %>
       <div class="room">
         <div class="room-name">
-          <a href="#"><%= room.name %></a>
-      </div>
-    </div>
-    <% end %>
-
-        <div class="room">
-          <div class="room-name">
-            <a href="#">roooooooooooooooooooooom</a>
-          </div>
-       </div>
-
-      <div class="room">
-        <div class="room-name">
-          <a href="#">room2</a>
-         </div>
+          <%= link_to room.name, workout_room_workout_messages_path(room) %>
         </div>
       </div>
+      <% end %>
+
+        
     </div>
+</div>
   

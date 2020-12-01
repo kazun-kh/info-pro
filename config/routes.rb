@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   root to: "makers#index"
   resources :makers 
     resources :work_outs, only: :index 
-      resources :workout_rooms,  only: [:new, :create]
+    resources :workout_rooms,  only: [:new, :create] do
+      resources :workout_messages, only: [:index, :create]
+    end
   
   resources :zavass, only: :index
 end

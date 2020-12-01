@@ -1,4 +1,5 @@
 class WorkoutRoomsController < ApplicationController
+  
   def new
     @workoutroom = WorkoutRoom.new
   end

@@ -22,6 +22,8 @@
   background-image: url(back7.jpeg);
   background-size: cover;
   background-position: center;
+  
+
 }
 
 .side-bar-header {
@@ -33,13 +35,13 @@
 
 .side-bar {
   background: linear-gradient(-45deg, rgba(51, 43, 168, 0.733), rgba(170, 197, 202, 0.8));
-  width : 300px;
+  width : 400px;
   height: 100vh;
 }
 
 .chat {
   background: linear-gradient(-45deg, rgba(160, 199, 135, 0.733), rgba(159, 91, 180, 0.8));
-  width : calc(100% - 300px) ;
+  width : calc(100% - 400px) ;
 }
 
 .chat-header{
