@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_30_102620) do
+ActiveRecord::Schema.define(version: 2020_12_01_024131) do
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -25,6 +25,16 @@ ActiveRecord::Schema.define(version: 2020_11_30_102620) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  create_table "workout_messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "content"
+    t.bigint "workout_room_id"
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_workout_messages_on_user_id"
+    t.index ["workout_room_id"], name: "index_workout_messages_on_workout_room_id"
   end
 
   create_table "workout_room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -42,6 +52,8 @@ ActiveRecord::Schema.define(version: 2020_11_30_102620) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "workout_messages", "users"
+  add_foreign_key "workout_messages", "workout_rooms"
   add_foreign_key "workout_room_users", "users"
   add_foreign_key "workout_room_users", "workout_rooms"
 end

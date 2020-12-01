@@ -8,4 +8,6 @@ class User < ApplicationRecord
 
          has_many :workout_room_users
          has_many :workout_rooms, through: :workout_room_users
+         has_many :workout_messages
+
 end
