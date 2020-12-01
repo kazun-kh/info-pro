@@ -1,28 +1,30 @@
-<div class='chat-room-form'>
-  <h1>新規チャットルーム</h1>
-  <%=form_with model: @workoutroom, local: true do |f|%>
-    <div class='chat-room-form__field'>
-      <div class='chat-room-form__field--left'>
-        <%= f.label :チャットルーム名, class: 'chat-room-form__label'%>
-      </div>
-      <div class='chat-room-form__field--right'>
-        <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'チャットルーム名を入力してください'%>
+
+
+  
+    
+    
+<%= render "shared/header" %>
+
+<body class="text-room">
+  <div class="main">
+    <div class="inner">
+      <div class="form__wrapper">      
+        
+        <h1 class="h1-roomtext">Let's make it!!<i class="fas fa-biking"></i></h1> 
+
+          <%=form_with model: @workoutroom, local: true do |f|%>
+
+
+            <div class="makemake">
+              <div class='chat-room-make'>
+                <%= f.text_field :name, class: 'make-content', placeholder: 'You can make a room'%>
+              </div>
+              <div class="actions">
+                <%= f.submit class: 'form__btn'%>
+              </div>
+            </div>  
+            <% end %>
       </div>
     </div>
-    <div class='chat-room-form__field'>
-    </div>
-    <div class='chat-room-form__field'>
-      <div class='chat-room-form__field--left'>
-        <label class='chat-room-form__label' for='chat_room_チャットメンバー'>チャットメンバー</label>
-      </div>
-      <div class='chat-room-form__field--right'>
-      </div>
-    </div>
-    <div class='chat-room-form__field'>
-      <div class='chat-room-form__field--left'></div>
-      <div class='chat-room-form__field--right'>
-        <%= f.submit class: 'chat-room-form__action-btn'%>
-      </div>
-    </div>
-  <% end %>
-</div>
+  </div>
+</body>
