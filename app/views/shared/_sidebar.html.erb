@@ -1,0 +1,19 @@
+<div class="side-bar">
+    <div class="side-bar-header">
+      <div class="side-header-name">
+      </div>
+    </div>
+
+    <div class="rooms">
+      <% @workoutroom.each do |room| %>
+      <div class="room">
+        <div class="room-name">
+          <%= link_to room.name, workout_room_workout_messages_path(room) %>
+        </div>
+      </div>
+      <% end %>
+
+        
+    </div>
+</div>
+  

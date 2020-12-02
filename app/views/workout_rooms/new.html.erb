@@ -1,0 +1,30 @@
+
+
+  
+    
+    
+<%= render "shared/header" %>
+
+<body class="text-room">
+  <div class="main">
+    <div class="inner">
+      <div class="form__wrapper">      
+        
+        <h1 class="h1-roomtext">Let's make it!!<i class="fas fa-biking faa-passing animated"></i></h1> 
+
+          <%=form_with model: @workoutroom, local: true do |f|%>
+
+
+            <div class="makemake">
+              <div class='chat-room-make'>
+                <%= f.text_field :name, class: 'make-content', placeholder: 'You can make a room'%>
+              </div>
+              <div class="actions">
+                <%= f.submit class: 'form__btn'%>
+              </div>
+            </div>  
+            <% end %>
+      </div>
+    </div>
+  </div>
+</body>

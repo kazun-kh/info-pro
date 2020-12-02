@@ -1,3 +1,15 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  get 'work_outs/index'
+  get 'zavass/index'
+  get 'makers/index'
+  root to: "makers#index"
+  resources :makers 
+    resources :work_outs, only: :index 
+    resources :workout_rooms, only: [:new, :create, :destroy] do
+      resources :workout_messages, only: [:index, :create]
+    end
+  
+  resources :zavass, only: :index
 end
+

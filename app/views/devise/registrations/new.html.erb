@@ -1,0 +1,43 @@
+<body class="sign-back">
+   
+  <h1 class="h1-roomtext">Please sign in!!<i class="far fa-thumbs-up faa-wrench animated"></i></h1> 
+
+  <div class="logtext">
+      <%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+
+
+      <div class="field">
+        <%= f.text_field :nickname,placeholder:"nickname" %>
+      </div>
+
+      <div class="field">
+        <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"email" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password, autocomplete: "new-password",placeholder:"password" %>
+      </div>
+
+      <div class="field">
+        <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder:"password_confirmation" %>
+      </div>
+
+    
+      <div class="field">
+        <%= f.text_field :my_protein, class: :form__text,placeholder:"my_protein" %>
+      </div> 
+
+      <div class="field">
+        <%= f.text_area :profile, class: :form__text,placeholder:"profile" %>
+      </div>
+
+    
+
+
+      <div class="actions">
+        <%= f.submit "sign in", class: :form__btn  %>
+      </div>
+    <% end %>
+     
+  </div>
+</body>

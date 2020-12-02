@@ -1,0 +1,53 @@
+.text-room{
+  background: linear-gradient(-45deg, rgba(198, 206, 129, 0.733), rgba(170, 197, 202, 0.8));
+
+}
+
+.h1-roomtext{
+  text-align: center;
+  margin-top:200px;
+}
+
+.makemake{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-room-form__errors {
+  margin: 30px 0;
+  padding: 20px 40px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.make-content {
+  float: left;
+  width: 500px;
+  line-height: 30px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.fas.fa-biking{
+  margin-left: 20px;
+}
+
+
+.form__btn{
+  margin:30px;
+}
+
+.side-bar-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.side-bar-header-name{
+ font-size: 20px;
+ text-align: center;
+ border-radius:10px;
+}
+
