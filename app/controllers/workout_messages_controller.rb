@@ -20,6 +20,6 @@ class WorkoutMessagesController < ApplicationController
   private
 
   def message_params
-   params.require(:workout_message).permit(:content).merge(user_id: current_user.id)
+   params.require(:workout_message).permit(:content, :image).merge(user_id: current_user.id)
   end
 end
