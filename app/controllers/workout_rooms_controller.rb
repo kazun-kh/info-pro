@@ -13,6 +13,12 @@ class WorkoutRoomsController < ApplicationController
     end
   end
 
+  def destroy
+    room = WorkoutRoom.find(params[:id])
+    room.destroy
+    redirect_to controller: :work_outs, action: :index
+  end
+
   private
 
   def room_params

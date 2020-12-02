@@ -11,23 +11,38 @@
   <div class="wrapper">
     <div class="side-bar">
     <div class="side-bar-header">
+    <div class="side-bar-header-name">
+    
      <%= @workout_room.name %>
+    </div>
     </div>
     </div>
     <div class="chat">   
         <div class="chat-header"> 
           <%= form_with model: [@workout_room, @workout_message], class: 'form', local: true do |f| %>
           <div class="form-input">
-          <label i class="fas fa-camera-retro"></i>
+          <label i class="fas fa-camera-retro faa-float animated"></i>
             <%= f.file_field :image, class: 'hidden' %>
               </label>
             <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
             
-            <%=  button_tag type: 'submit', class: 'fas fa-running' do %>            
+            <%=  button_tag type: 'submit', class: 'fas fa-paper-plane faa-wrench animated' do %>            
             <% end %>
           <% end %>
           </div>
             
+        <div class="right-header">
+          <div class="header-button">
+          <%= link_to workout_room_path(@workout_room), :method => :delete do %>
+          <i class="fas fa-bomb fa-3x faa-pulse animated"></i> 
+          <% end %>
+
+
+
+           </div>  
+        </div> 
+
+
         </div> 
         
       <%= render partial: 'shared/message', collection: @workout_messages %>

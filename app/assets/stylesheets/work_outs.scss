@@ -48,7 +48,7 @@
   height: 100px;
   background: linear-gradient(-45deg, rgba(63, 233, 139, 0.733), rgba(170, 197, 202, 0.8));
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
 }
@@ -75,11 +75,14 @@
   display: none;
 }
 
-.fas.fa-running{
+
+
+
+.fas.fa-paper-plane{
   background: linear-gradient(-45deg, rgba(79, 174, 238, 0.733), rgba(183, 202, 170, 0.8));
   border: none;
-  color: rgb(10, 0, 0);
-  font-size: 30px;
+  color: rgb(7, 3, 3);
+  font-size: 25px;
   border-radius:30px;
   padding: 20px;
   margin-left: 10px;
