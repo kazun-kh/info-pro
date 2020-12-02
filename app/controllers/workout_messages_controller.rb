@@ -8,9 +8,9 @@ class WorkoutMessagesController < ApplicationController
 
   def create
     @room = WorkoutRoom.find(params[:workout_room_id])
-    @message = @room.messages.new(message_params)
+    @message = @room.workout_messages.new(message_params)
     if @message.save
-      redirect_to  workout_room_workout_messages(@room)
+      redirect_to  workout_room_workout_messages_path(@room)
     else
       render :index
     end 
