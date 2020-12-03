@@ -3,8 +3,8 @@ class WorkoutMessagesController < ApplicationController
   def index
     @workout_message = WorkoutMessage.new
     @workout_room = WorkoutRoom.find(params[:workout_room_id])
-    @workout_messages = @workout_room.workout_messages.includes(:user)
-    @workoutroom = WorkoutRoom.all
+    @workout_messages = @workout_room.workout_messages.includes(:user).order(id: "DESC")
+    @workoutroom = WorkoutRoom.all.order(id: "DESC")
 
   end
 
