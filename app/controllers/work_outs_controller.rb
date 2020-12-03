@@ -4,5 +4,6 @@ class WorkOutsController < ApplicationController
   def index
   @workoutroom = WorkoutRoom.all
   
+  
   end
 end
