@@ -12,7 +12,7 @@
     <div class="side-bar">
           <div class="side-bar-header">
             <div class="side-bar-header-name">
-            <i class="fas fa-cat faa-ring animated"></i>
+            <i class="fas fa-dumbbell faa-ring animated"></i>
             <%= @workout_room.name %>
             </div>
           </div>
@@ -28,17 +28,22 @@
     </div>
     <div class="chat">   
         <div class="chat-header"> 
-          <%= form_with model: [@workout_room, @workout_message], class: 'form', local: true do |f| %>
+          <%= form_with model: [@workout_room, @workout_message], method: :post, id: "form", class: 'form', local: true do |f| %>
+          
           <div class="form-input">
+            
             <label i class="fas fa-camera-retro faa-float animated"></i>
-              <%= f.file_field :image, class: 'hidden' %>
+              <%= f.file_field :image, class: 'hidden', id: 'message-image' %>
             </label>
+            <div id="image-list"></div>
             <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
-            <%=  button_tag type: 'submit', class: 'fas fa-paper-plane faa-wrench animated' do %>            
+            <%=  button_tag type: 'submit', id: "submit", class: 'fas fa-paper-plane faa-wrench animated' do %>            
             <% end %>
             <% end %>
           </div>
-            
+            <div id="list">
+            </div>            
+
           <div class="right-header">
             <div class="header-button">
               <%= link_to workout_room_path(@workout_room), :method => :delete do %>
@@ -53,3 +58,17 @@
   </div>
 
 
+<%# footer %>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">TOP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <%= link_to "前のページへ", work_outs_index_path %>
+      </li>
+    </ul>
+  </div>
+</nav>

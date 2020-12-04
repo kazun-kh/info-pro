@@ -8,3 +8,4 @@ window.addEventListener('load', () => {
     addTaxDom.innerHTML = protein;
 })
 });
+
