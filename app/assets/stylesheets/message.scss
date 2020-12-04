@@ -3,6 +3,14 @@
 
 .message{
 margin-left:40px ;
+
+ 
+margin: 20px ;
+padding: 8px;
+max-width: 41%;
+border-radius: 12px;
+background: linear-gradient(-45deg, rgba(49, 235, 43, 0.733), rgba(240, 243, 216, 0.8));
+
 }
 
 .upper-message{
@@ -31,7 +39,7 @@ margin-left:40px ;
 .kaminari-wrap{
   display: flex;
   justify-content: center;
- font-size: 30px;
+ font-size: 18px;
  margin: 20px;
 }
 
@@ -50,3 +58,6 @@ margin-left:40px ;
 .pagination li a:hover {        
   border-radius: 15px;    
 }
+
+
+
