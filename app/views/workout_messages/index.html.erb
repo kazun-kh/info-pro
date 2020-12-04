@@ -37,7 +37,7 @@
             </label>
             <div id="image-list"></div>
             <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
-            <%=  button_tag type: 'submit', id: "submit", class: 'fas fa-paper-plane faa-wrench animated' do %>            
+            <%=  button_tag type: 'submit', id: "submit", class: 'fas fa-paper-plane faa-wrench animated-hover' do %>            
             <% end %>
             <% end %>
           </div>
@@ -54,7 +54,14 @@
           </div> 
         </div> 
       <%= render partial: 'shared/message', collection: @workout_messages %>
+      <div class="kaminari-wrap">
+        <div class="kaminari">
+        <%= paginate @workout_messages %>
+      </div>
+      </div>
     </div>
+    
+
   </div>
 
 
