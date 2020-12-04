@@ -54,7 +54,14 @@
           </div> 
         </div> 
       <%= render partial: 'shared/message', collection: @workout_messages %>
+      <div class="kaminari-wrap">
+        <div class="kaminari">
+        <%= paginate @workout_messages %>
+      </div>
+      </div>
     </div>
+    
+
   </div>
 
 

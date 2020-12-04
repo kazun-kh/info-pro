@@ -1,3 +1,6 @@
+
+
+
 .message{
 margin-left:40px ;
 }
@@ -24,4 +27,25 @@ margin-left:40px ;
   width: 65px;
   border-radius: 20%;
   margin: 20px;
+}
+.kaminari-wrap{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.pagination li a {          
+  border: none;     
+  background: linear-gradient(-45deg, rgba(247, 91, 177, 0.733), rgba(240, 243, 216, 0.8));
+ 
+}
+
+.pagination .active a {     
+  background: linear-gradient(-45deg, rgba(54, 24, 187, 0.733), rgba(240, 243, 216, 0.8));
+  border-radius: 15px;     
+}
+
+
+.pagination li a:hover {        
+  border-radius: 15px;    
 }
