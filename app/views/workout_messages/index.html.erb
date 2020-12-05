@@ -22,7 +22,7 @@
     </div>
     <div class="chat">   
         <div class="chat-header"> 
-          <%= form_with model: [@workout_room, @workout_message], method: :post, id: "form", class: 'form', local: true do |f| %>
+          <%= form_with model: [@workout_room, @workout_message], method: :post, id: "formmm", class: 'form', remote: true do |f| %>
           
           <div class="form-input">
             
@@ -31,8 +31,8 @@
             </label>
             
             <div id="image-list"></div>
-            <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
-            <%=  button_tag type: 'submit', id: "submit", class: 'fas fa-paper-plane faa-wrench animated-hover' do %>            
+            <%= f.text_field :content, class: 'form-message', placeholder: 'type a message', id: "contenttt" %>
+            <%=  button_tag type: 'submit', id: "submittt", class: 'fas fa-paper-plane faa-wrench animated-hover' do %>            
             <% end %>
             <% end %>
           </div>
