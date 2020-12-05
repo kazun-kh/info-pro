@@ -1,17 +1,9 @@
 // function memo() {
-<<<<<<< Updated upstream
 //   const submit = document.getElementById("submit");
 //   submit.addEventListener("click", (e) => {
 //     const formData = new FormData(document.getElementById("form"));
 //     const XHR = new XMLHttpRequest();
 //     XHR.open("POST", "/workout_rooms/workout_room_id/workout_messages", true);
-=======
-//   const submit = document.getElementById("submittt");
-//   submit.addEventListener("click", (e) => {
-//     const formData = new FormData(document.getElementById("formmm"));
-//     const XHR = new XMLHttpRequest();
-//     XHR.open("POST", "/workout_messages", true);
->>>>>>> Stashed changes
 //     XHR.responseType = "json";
 //     XHR.send(formData);
 //     XHR.onload = () => {
@@ -20,13 +12,8 @@
 //         return null;
 //       }
 //       const item = XHR.response.post;
-<<<<<<< Updated upstream
 //       const list = document.getElementById("list");
 //       const formText = document.getElementById("content");
-=======
-//       const list = document.getElementById("listtt");
-//       const formText = document.getElementById("contenttt");
->>>>>>> Stashed changes
 //       const HTML = `
 //       <div class="message" >
 //       <div class="upper-message">
@@ -51,8 +38,4 @@
 //     e.preventDefault();
 //   });
 // }
-<<<<<<< Updated upstream
 // window.addEventListener("load", memo);
-=======
-// window.addEventListener("load", memo);
->>>>>>> Stashed changes
