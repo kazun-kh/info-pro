@@ -1,5 +1,5 @@
 class WorkoutMessagesController < ApplicationController
-
+  before_action :authenticate_user!, only: :index
   def index
     @workout_message = WorkoutMessage.new
     @workout_room = WorkoutRoom.find(params[:workout_room_id])
