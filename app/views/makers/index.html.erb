@@ -19,6 +19,7 @@
             <!--<p><a class="btn btn-lg btn-primary" href="#" role="button">今すぐサインアップ</a></p> -->
             <% unless user_signed_in? %> 
             <p><%= link_to '今すぐサインアップ', new_user_registration_path, class: "btn btn-lg btn-primary" %></p>
+            
             <% end %>
           </div>
         </div>
@@ -30,7 +31,9 @@
             <h1>Positive thinking can be contagious.</h1>
             <p>Being surrounded by winners helps you develop into a winner.</p>
             <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p> -->
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">もっとみる</a></p>
+
+              <p><%= link_to "Let's talk", work_outs_index_path, class: "btn btn-lg btn-primary" %></p>
+
           </div>
         </div>
       </div>
@@ -41,8 +44,10 @@
             <h1> It’s important to have a healthy balanced diet</h1>
             <p> but not to get too bogged down about it. It’s important to enjoy your food, too.</p>
             <!-- <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p> -->
-            <p><a class="btn btn-lg btn-primary" href="#" role="button">ギャラリーをみる</a></p>
+
+            <p><a class="btn btn-lg btn-primary" href="https://www.amazon.co.jp/gp/bestsellers/hpc/3457068051" role="button">Amazon ランキングへ</a></p>
           </div>
+
         </div>
       </div>
     </div>
@@ -83,86 +88,74 @@
   <br>
     <div class="row">
       <div class="col-lg-4"> 
-       <%= link_to image_tag("zavas_logo.jpg",class:"rounded"), zavass_index_path %>
+       <%= link_to image_tag("zavas_logo.jpg",class:"rounded"), "https://www.meiji.co.jp/sports/savas/" %>
         <h2></h2><!--会社のキャッチコピーを入れたい-->
         <p></p>
-        <p><a class="btn btn-secondary" href="https://www.meiji.co.jp/sports/savas/" role="button">公式HP &raquo;</a></p>
       </div>
       <div class="col-lg-4">
-         <%= link_to image_tag("goldgym.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("goldgym.png",class:"rounded"),"https://www.goldsgym.jp/topics/657" %>
         
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://www.goldsgym.jp/topics/657" role="button">公式HP &raquo;</a></p>
       </div>
       <div class="col-lg-4">
-         <%= link_to image_tag("myprotein.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("myprotein.png",class:"rounded"),"https://www.myprotein.jp/" %>
         
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://www.myprotein.jp/" role="button">公式HP &raquo;</a></p>
       </div>
        <div class="col-lg-4">
-         <%= link_to image_tag("dns_icon.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("dns_icon.png",class:"rounded"),"https://shop.dnszone.jp/home" %>
         
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://shop.dnszone.jp/home" role="button">公式HP &raquo;</a></p>
       </div>
        <div class="col-lg-4">
-         <%= link_to image_tag("weider.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("weider.png",class:"rounded"),"https://www.weider-jp.com/"  %>
         
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://www.weider-jp.com/" role="button">公式HP &raquo;</a></p>
       </div>
        <div class="col-lg-4">
-         <%= link_to image_tag("belegend.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("belegend.png",class:"rounded"),"https://belegend.jp/" %>
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://belegend.jp/" role="button">公式HP &raquo;</a></p>
       </div>
 
       <div class="col-lg-4">
-         <%= link_to image_tag("optimum.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("optimum.png",class:"rounded"),"https://www.optimumnutrition.jp/" %>
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://www.optimumnutrition.jp/" role="button">公式HP &raquo;</a></p>
       </div>
 
       <div class="col-lg-4">
-         <%= link_to image_tag("kentai.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("kentai.png",class:"rounded"),"https://kentai.co.jp/" %>
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://kentai.co.jp/" role="button">公式HP &raquo;</a></p>
       </div>
 
       <div class="col-lg-4">
-         <%= link_to image_tag("grong.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("grong.png",class:"rounded"),"https://grong.jp/" %>
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://grong.jp/" role="button">公式HP &raquo;</a></p>
       </div>
 
       <div class="col-lg-4">
-         <%= link_to image_tag("alpron.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("alpron.png",class:"rounded"),"https://alpron.co.jp/" %>
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://alpron.co.jp/" role="button">公式HP &raquo;</a></p>
       </div>
 
       <div class="col-lg-4">
-         <%= link_to image_tag("ultora.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("ultora.png",class:"rounded"),"https://ultora.co.jp/" %>
         <h2></h2>
         <p>すべての人に、カラダ改革を。</p>
-        <p><a class="btn btn-secondary" href="https://ultora.co.jp/" role="button">公式HP &raquo;</a></p>
       </div>
 
       <div class="col-lg-4">
-         <%= link_to image_tag("muscleTech_logo02.png",class:"rounded"), zavass_index_path %>
+         <%= link_to image_tag("muscleTech_logo02.png",class:"rounded"),"https://www.muscletech-japan.com/" %>
         <h2></h2>
         <p></p>
-        <p><a class="btn btn-secondary" href="https://www.muscletech-japan.com/" role="button">公式HP &raquo;</a></p>
       </div>
 
     </div>
