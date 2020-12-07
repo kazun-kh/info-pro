@@ -13,27 +13,12 @@
 
 ### Association
 
-- has_many :room_users
-- has_many :rooms, through: room_users
-- has_many :messages
-
-## makers テーブル
+- has_many :workout_room_users
+- has_many :workout_rooms, through: room_users
+- has_many :workout_messages
 
 
-
-
-### Association
-
-
-
-## maker_users テーブル
-
-
-
-### Association
-
-
-## rooms テーブル
+## workout_rooms テーブル
 
 | Column   | Type       | Options           |
 | -------- | ---------- | ----------------- |
@@ -41,31 +26,31 @@
 
 ### Association
 
-- has_many :room_users
+- has_many :workout_room_users
 - has_many :users, through: room_users
-- has_many :messages
+- has_many :workout_messages
 
-## room_users テーブル
+## workout_room_users テーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
-
-### Association
-
-- belongs_to :user
-- belongs_to :room
-
-## messages テーブル
-
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
+| Column       | Type       | Options                        |
+| ------------ | ---------- | ------------------------------ |
+| user         | references | null: false, foreign_key: true |
+| workout_room | references | null: false, foreign_key: true |
 
 ### Association
 
 - belongs_to :user
-- belongs_to :room
+- belongs_to :workout_room
+
+## workout_messages テーブル
+
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| content          | string     |                                |
+| user             | references | null: false, foreign_key: true |
+| workout_room     | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+- belongs_to :workout_room

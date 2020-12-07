@@ -1,12 +1,6 @@
 <%= render "shared/header" %>
-
-  <div class="jumbo-workout-head">
-  <div class="jumbo-content">
-    <h1 class="display-4">Let's get started!</h1>
-    <p class="lead">筋トレに関することなら何でも話しましょう！</p>
-    <%= link_to 'Make a room',  new_workout_room_path, class: "btn btn-lg btn-primary" %>
-    </div>
-  </div>
+<%= render "shared/jumbo" %>
+  
 
   <div class="wrapper">
     <div class="side-bar">
@@ -28,16 +22,17 @@
     </div>
     <div class="chat">   
         <div class="chat-header"> 
-          <%= form_with model: [@workout_room, @workout_message], method: :post, id: "form", class: 'form', local: true do |f| %>
+          <%= form_with model: [@workout_room, @workout_message], method: :post, id: "formmm", class: 'form', remote: true do |f| %>
           
           <div class="form-input">
             
             <label i class="fas fa-camera-retro faa-float animated"></i>
               <%= f.file_field :image, class: 'hidden', id: 'message-image' %>
             </label>
+            
             <div id="image-list"></div>
-            <%= f.text_field :content, class: 'form-message', placeholder: 'type a message' %>
-            <%=  button_tag type: 'submit', id: "submit", class: 'fas fa-paper-plane faa-wrench animated-hover' do %>            
+            <%= f.text_field :content, class: 'form-message', placeholder: 'type a message', id: "contenttt" %>
+            <%=  button_tag type: 'submit', id: "submittt", class: 'fas fa-paper-plane faa-wrench animated-hover' do %>            
             <% end %>
             <% end %>
           </div>
