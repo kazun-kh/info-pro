@@ -1,6 +1,4 @@
 class WorkoutMessagesController < ApplicationController
-  before_action :authenticate_user!, only: :index
-
 
   def index
     @workout_message = WorkoutMessage.new
@@ -23,5 +21,4 @@ class WorkoutMessagesController < ApplicationController
   def message_params
    params.require(:workout_message).permit(:content, :image).merge(user_id: current_user.id)
   end
-  
 end
