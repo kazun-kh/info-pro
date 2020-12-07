@@ -22,7 +22,7 @@
     </div>
     <div class="chat">   
         <div class="chat-header"> 
-          <%= form_with model: [@workout_room, @workout_message], method: :post, id: "formmm", class: 'form', remote: true do |f| %>
+          <%= form_with model: [@workout_room, @workout_message], method: :post, id: "formmm", class: 'form', local: true do |f| %>
           
           <div class="form-input">
             
