@@ -3,7 +3,6 @@ class WorkOutsController < ApplicationController
   
   def index
   @workoutroom = WorkoutRoom.all.order(id: "DESC")
-  
-  
+
   end
 end
