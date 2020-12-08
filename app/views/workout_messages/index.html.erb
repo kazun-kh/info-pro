@@ -36,8 +36,7 @@
             <% end %>
             <% end %>
           </div>
-            <div id="list">
-            </div>            
+             
 
           <div class="right-header">
             <div class="header-button">
@@ -48,7 +47,9 @@
             </div>  
           </div> 
         </div> 
-      <%= render partial: 'shared/message', collection: @workout_messages %>
+       
+         <%= render partial: 'shared/message', collection: @workout_messages %>
+        
       <div class="kaminari-wrap">
         <div class="kaminari">
         <%= paginate @workout_messages %>
