@@ -1,22 +1,57 @@
+<div id='messages'>
+  <% if  current_user.id ==  message.user.id %> 
+  <div class="user-right" >
 
-<div class="message" >
-  <div class="upper-message">
-    <div class="message-user">
-      <!-- 投稿したユーザー名情報を出力する -->
-      <%= message.user.nickname %>
+    <div class="message-curent " >
+    
+      <div class="upper-message">
+        <div class="message-user">
+          <!-- 投稿したユーザー名情報を出力する -->
+          <%= message.user.nickname  %>
+        </div>
+        <div class="message-date">
+          <!-- 投稿した時刻を出力する -->
+          <%= l message.created_at %>
+        </div>
+        <%# <div class="more">
+        <span><%= image_tag 'arrow_top.png' %></span>
+        <%# <%= link_to '削除', workout_room_workout_message_path(message.id), method: :delete %>
+       <%# </div>  %> 
+      </div>
+       
+      <div class="lower-message">
+        <div class="message-content">
+          <!-- 投稿したメッセージ内容を記述する -->
+          <%= message.content %>
+        </div>
+        <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+      </div>
     </div>
-    <div class="message-date">
-      <!-- 投稿した時刻を出力する -->
-      <%= l message.created_at %>
-    </div>
+
   </div>
-  <div class="lower-message">
-    <div class="message-content">
-      <!-- 投稿したメッセージ内容を記述する -->
-      <%= message.content %>
+  <% else %>
+  <div id='messages'>
+    <div class="message " >
+      <div class="upper-message">
+        <div class="message-user">
+          <!-- 投稿したユーザー名情報を出力する -->
+          <%= message.user.nickname  %>
+        </div>
+        <div class="message-date">
+          <!-- 投稿した時刻を出力する -->
+          <%= l message.created_at %>
+        </div>
+      </div>
+       
+      <div class="lower-message">
+        <div class="message-content">
+          <!-- 投稿したメッセージ内容を記述する -->
+          <%= message.content %>
+        </div>
+        <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+      </div>
     </div>
-    <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
-  </div>
-  
+    </div>
+  <%end%>
+
 </div>
-

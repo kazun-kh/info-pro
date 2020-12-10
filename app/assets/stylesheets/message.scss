@@ -1,16 +1,26 @@
-
+.user-right{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.message-curent{
+margin-right:100px ;
+margin: 20px ;
+padding: 8px;
+max-width: 41%;
+border-radius: 12px;
+background: linear-gradient(-45deg, rgba(37, 233, 50, 0.733), rgba(93, 204, 117, 0.8));
+}
 
 
 
 .message{
 margin-left:40px ;
-
- 
 margin: 20px ;
 padding: 8px;
 max-width: 41%;
 border-radius: 12px;
-background: linear-gradient(-45deg, rgba(49, 235, 43, 0.733), rgba(240, 243, 216, 0.8));
+background: linear-gradient(-45deg, rgba(71, 230, 230, 0.733), rgba(121, 209, 238, 0.8));
 
 }
 

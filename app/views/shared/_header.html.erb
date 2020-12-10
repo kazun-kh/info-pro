@@ -8,7 +8,7 @@
       <ul class="navbar-nav mr-auto">
         <% if user_signed_in? %>   
         <li class="nav-item active">          
-          <%= link_to current_user.nickname, "#", class: "nav-link" %>
+          <%= link_to current_user.nickname, "#", class: "nav-link", id: "js-nickname" %>
         </li>
         <li class="nav-item">
           <%= link_to 'logout', destroy_user_session_path, method: :delete, class: "nav-link" %>
@@ -44,9 +44,9 @@
           </div>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
+      <%# <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-info" type="submit">Search</button>
-      </form>
+      </form> %>
     </div>
   </nav>
