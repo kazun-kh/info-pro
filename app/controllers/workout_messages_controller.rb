@@ -14,10 +14,9 @@ class WorkoutMessagesController < ApplicationController
   def create
     @room = WorkoutRoom.find(params[:workout_room_id])
     @message = @room.workout_messages.new(message_params)
-
     if @message.save
-   
-    ActionCable.server.broadcast 'message_channel', content: @message, user: current_user.nickname,  time: @message.created_at.strftime('%Y/%m/%d %H:%M:%S'), image: @message.image
+    redirect_to  workout_room_workout_messages_path(@room)
+          # ActionCable.server.broadcast 'message_channel', content: @message, user: current_user.nickname,  time: @message.created_at.strftime('%Y/%m/%d %H:%M:%S')
 
     end 
   end
