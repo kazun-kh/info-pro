@@ -13,7 +13,12 @@
           <!-- 投稿した時刻を出力する -->
           <%= l message.created_at %>
         </div>
+        <%# <div class="more">
+        <span><%= image_tag 'arrow_top.png' %></span>
+        <%# <%= link_to '削除', workout_room_workout_message_path(message.id), method: :delete %>
+       <%# </div>  %> 
       </div>
+       
       <div class="lower-message">
         <div class="message-content">
           <!-- 投稿したメッセージ内容を記述する -->
@@ -37,6 +42,7 @@
           <%= l message.created_at %>
         </div>
       </div>
+       
       <div class="lower-message">
         <div class="message-content">
           <!-- 投稿したメッセージ内容を記述する -->

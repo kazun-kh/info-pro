@@ -21,6 +21,13 @@ class WorkoutMessagesController < ApplicationController
     end 
   end
 
+  # def destroy
+  #   message = WorkoutMessage.find(params[:id])
+  #   message.destroy
+  #   redirect_to  workout_room_workout_messages_path(@room)
+
+  # end
+
   private
 
   def message_params
