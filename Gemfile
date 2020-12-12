@@ -65,3 +65,4 @@ gem 'jquery-rails'
 
 gem "gretel"
 gem 'kaminari'
+gem "aws-sdk-s3", require: false
