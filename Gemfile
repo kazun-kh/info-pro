@@ -66,3 +66,5 @@ gem 'jquery-rails'
 gem "gretel"
 gem 'kaminari'
 gem "aws-sdk-s3", require: false
+
+gem 'rspec-rails', '~> 4.0.0'
