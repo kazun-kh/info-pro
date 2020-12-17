@@ -13,19 +13,21 @@
           <!-- 投稿した時刻を出力する -->
           <%= l message.created_at %>
         </div>
-        <%# <div class="more">
-        <span><%= image_tag 'arrow_top.png' %></span>
-        <%# <%= link_to '削除', workout_room_workout_message_path(message.id), method: :delete %>
-       <%# </div>  %> 
+         <div class="more">
+       <%= link_to '', workout_room_workout_message_path(message,id: message.id), class:'fas fa-bomb faa-wrench animated-hover', method: :delete %>      
+       </div>  
       </div>
+       
        
       <div class="lower-message">
         <div class="message-content">
           <!-- 投稿したメッセージ内容を記述する -->
           <%= message.content %>
+          
         </div>
         <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
       </div>
+      
     </div>
 
   </div>
@@ -41,6 +43,9 @@
           <!-- 投稿した時刻を出力する -->
           <%= l message.created_at %>
         </div>
+         <div class="more">
+       <%= link_to '', workout_room_workout_message_path(message,id: message.id), class:'fas fa-bomb faa-wrench animated-hover', method: :delete %>      
+       </div>  
       </div>
        
       <div class="lower-message">
