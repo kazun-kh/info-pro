@@ -17,16 +17,15 @@ class WorkoutMessagesController < ApplicationController
     if @message.save
     redirect_to  workout_room_workout_messages_path(@room)
           # ActionCable.server.broadcast 'message_channel', content: @message, user: current_user.nickname,  time: @message.created_at.strftime('%Y/%m/%d %H:%M:%S')
-
     end 
   end
 
-  # def destroy
-  #   message = WorkoutMessage.find(params[:id])
-  #   message.destroy
-  #   redirect_to  workout_room_workout_messages_path(@room)
+   def destroy
+    message = WorkoutMessage.find(params[:id])
+    message.destroy   
+    redirect_to controller: :work_outs, action: :index
 
-  # end
+   end
 
   private
 
