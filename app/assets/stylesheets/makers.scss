@@ -156,3 +156,12 @@ body {
 }
 
 
+@media screen and (max-width:767px) { 
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .badge.badge-info { 
+    width: 55%;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+
