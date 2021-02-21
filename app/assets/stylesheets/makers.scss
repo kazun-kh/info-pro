@@ -153,6 +153,7 @@ body {
   width: 55%;
   height: 10rem;
   padding: 50px;
+  text-align: center;
 }
 
 
@@ -160,8 +161,21 @@ body {
   /*　画面サイズが480pxからはここを読み込む　*/
   .badge.badge-info { 
     width: 55%;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-align: center;
+    line-height: normal;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:375px) { 
+  /*　画面サイズが480pxからはここを読み込む　*/
+  .badge.badge-info { 
+    width: 55%;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: normal;
+    margin: 0 auto;
   }
 }
 
